@@ -16,14 +16,15 @@ Interactions externes
 
 Ce qu’il est possible de faire:
 
-	- Ajouter des icônes sur le bureau
-	- Modifier les coordonnées des icônes
-	- Modifier le nom,l’image et le niveau de protections des icônes
-	- Ajouter/Retirer des interactions permettant de modifier le niveau de protection
+- Ajouter des icônes sur le bureau
+- Modifier les coordonnées des icônes
+- Modifier le nom,l’image et le niveau de protections des icônes
+- Ajouter/Retirer des interactions permettant de modifier le niveau de protection
 
 Ce qu’il n’est pas possible de faire:
-	- Modifier le fond d’écran
-	- Afficher des messages avec un programme
-	- Créer des interactions autres que le changement de protection.	
+
+- Modifier le fond d’écran
+- Afficher des messages avec un programme
+- Créer des interactions autres que le changement de protection.	
 
 Ces interactions sont réparties dans deux fichiers json.
