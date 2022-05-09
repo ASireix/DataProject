@@ -1,0 +1,21 @@
+{
+	"Screwdriver":{
+		"Folder/Vulnerable":{
+			"result":"Folder/Neutral"
+		},
+		"Image/Vulnerable":{
+			"result":"Image/Neutral"
+		},
+		"Program/Protected":{
+			"result":"Program/Neutral"
+		}
+	},
+	"Hammer":{
+		"Folder/Neutral":{
+			"result":"Folder/Vunerable"
+		},
+		"Folder/Protected":{
+			"result":"Folder/Neutral"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+Données externalisable:
+
+- Wallpaper : -size
+			  -aspect ratio
+			  -image
+- Mouse : -size
+          -image
+		  -top,down,corner interaction element
+		  -speed
+
+---------------------------------
+
+Bureau contient des programmes et des dossiers et la barre window
+
+Executable : type : dossiers,programmes
+
+executable : -position
+			 -type
+			 -size
+			 -
+
+-----------------------------------
+
+Outils:
+
+Chainsaw : rend pas protégé les dossiers ou fichier protégé
+		rend vulnérable les dossiers ou fichiers pas protégé
+
+Souris pirate:
+
+Marteau: 
+
+Tournevis: Rend neutre les objets vulnérable
+
+Clé à molette:
+
+----------------------------------
+
