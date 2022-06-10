@@ -42,18 +42,20 @@ public class GameManager : MonoBehaviour
 
     public GameObject CreateObject(KeyValuePair<string, Icon> o)
     {
-        var sprite = Resources.LoadAll<Sprite>(o.Value.imagePath);
+        WWW file = new WWW(Application.streamingAssetsPath + "/" + o.Value.imagePath + ".png");
+        var sprite = Sprite.Create(file.texture as Texture2D, new Rect(0, 0, file.texture.width, file.texture.height), Vector2.zero);
+        //Resources.LoadAll<Sprite>(o.Value.imagePath);
 
         GameObject tempObj = new GameObject(o.Value.name);
         SpriteRenderer spriteRenderer = tempObj.AddComponent<SpriteRenderer>();
-
+        spriteRenderer.sprite = sprite;
         if (o.Value.content != null && o.Value.content.Count > 0)
         {
-            spriteRenderer.sprite = sprite[1];
+            //spriteRenderer.sprite = sprite[1];
         }
         else
         {
-            spriteRenderer.sprite = sprite[0];
+            //spriteRenderer.sprite = sprite[0];
         }
 
         tempObj.transform.localScale = new Vector3(o.Value.imageScale, o.Value.imageScale, o.Value.imageScale);

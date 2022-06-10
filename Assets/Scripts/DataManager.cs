@@ -17,8 +17,9 @@ public class DataManager : MonoBehaviour
 
     void Start()
     {
-        var jsonTextFile = Resources.Load<TextAsset>("Data/Icones");
-        icons = JsonConvert.DeserializeObject<Dictionary<string, Icon>>(jsonTextFile.text);
+        //var jsonTextFile = Resources.Load<TextAsset>("Data/Icones");
+        WWW data = new WWW(Application.streamingAssetsPath + "/" + "Data/Icones.json");
+        icons = JsonConvert.DeserializeObject<Dictionary<string, Icon>>(data.text);
 
         foreach (KeyValuePair<string, Icon> o in icons)
         {
@@ -29,8 +30,9 @@ public class DataManager : MonoBehaviour
             
         }
 
-        var jsonTextFile2 = Resources.Load<TextAsset>("Data/Interactions");
-        interactions = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, Interaction>>>(jsonTextFile2.text);
+        //var jsonTextFile2 = Resources.Load<TextAsset>("Data/Interactions");
+        WWW data2 = new WWW(Application.streamingAssetsPath + "/" + "Data/Interactions.json");
+        interactions = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, Interaction>>>(data2.text);
 
         foreach (KeyValuePair<string, Dictionary<string, Interaction>> o in interactions)
         {
